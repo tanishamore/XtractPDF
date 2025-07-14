@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF to Excel Extractor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Upload PDF</h2>
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="pdf" id="pdf" required>
+            <small>Max file size: 5 MB</small>
+            <input type="password" name="password" id="password" placeholder="Password (if any)">
+            <button type="submit">Upload & Extract</button>
+        </form>
+    </div>
+</body>
+</html>
