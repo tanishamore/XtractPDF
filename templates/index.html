@@ -8,6 +8,36 @@
     <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/">XtractPDF</a>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="https://github.com/tanishamore/" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="24">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/tanishamore23/" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="24">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/tanimo23/" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" width="24">
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:tanishamore023@gmail.com">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" width="24">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
     <div class="container">
         <h2>Upload PDF</h2>
         <form method="POST" enctype="multipart/form-data">
@@ -17,5 +47,9 @@
             <button type="submit">Upload & Extract</button>
         </form>
     </div>
+    <footer style="text-align: center; padding: 20px; margin-top: 40px; color: #777;">
+        Crafted & coded by Tanisha More • © 2025
+    </footer>
+    
 </body>
 </html>
